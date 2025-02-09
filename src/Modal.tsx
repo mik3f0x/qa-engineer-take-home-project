@@ -14,6 +14,7 @@ const CustomerModal: React.FC<CustomerModalProps> = ({ onClose, children }) => {
     <div className="modal-container" onClick={onClose}>
       <div
         className="modal-body"
+        data-testid="add-modal"
         onClick={(e) =>
           e.stopPropagation()
         } /* Prevent closing when clicking inside the modal */
