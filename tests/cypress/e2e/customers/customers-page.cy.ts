@@ -56,6 +56,7 @@ describe("customers page", () => {
       cy.getByData("table-row").eq(-1).contains(testUser.state)
       cy.getByData("table-row").eq(-1).contains(testUser.zip)
       cy.getByData("table-row").eq(-1).contains(testUser.notes)
+      // Probably could have written a custom command for these types of lines
     })
 
     it("adds a customer with only required fields filled and valid", () => {
